@@ -115,7 +115,7 @@ def Check():
             Shape2()
         if(takeAction) == 2:
             Shape1()
-        if(taleAction) == 1:
+        if(takeAction) == 1:
             MoveElsewhere()
     else:
         print("Awwwww.....")
@@ -128,6 +128,3 @@ def Check():
     
 
     
-
-
-
