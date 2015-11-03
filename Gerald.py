@@ -1,3 +1,11 @@
+
+
+
+
+
+    
+
+    
 import turtle
 import random
 
@@ -6,6 +14,7 @@ Gerald.shape("turtle")
 Gerald.color("SteelBlue")
 Gerald.pencolor("SkyBlue")
 Gerald.pensize(10)
+NameQuestions = ["what is this?", "what is this called?", "name?", "what is this piece named?" "what is the name of your art?", "what is the name?"]
 NamePart1 = ["Void", "Beam", "Sky", "Trilogy", "Oddysey", "Perfection", "Pornography", "Poem", "Song", "Meeting"]
 NamePart2 = ["of", "and", "Lady", "Gentleman", "World"]
 NamePart3 = ["God", "Asgaard", "Holy Light", "Temple", "Feline", "Arson", "Cows", "Aliens"]
@@ -127,7 +136,7 @@ def Check():
         print("")
         GetAction()
 
-    if(praise.lower) == "what is this called?":
+    if(praise) in NameQuestions:
         NameArt()
 
     if((praise) == "exit" or (praise) == "Exit"):
@@ -158,12 +167,11 @@ def Convo():
 
     
         
-
+        
     
-
-
-
-
     
 
     
+
+
+
