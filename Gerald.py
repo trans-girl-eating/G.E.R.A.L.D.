@@ -128,13 +128,14 @@ def Check():
         GetAction()
 
     if(praise.lower) == "what is this called?":
-        print(random.choice(NamePart1) + random.choice(NamePart2) + random.choice(NamePart3))
-        Start() 
+        NameArt()
 
     if((praise) == "exit" or (praise) == "Exit"):
         Start()
 
-
+def NameArt():
+    print(random.choice(NamePart1) + " " + random.choice(NamePart2) + " " + random.choice(NamePart3))
+    Check()
 ###############Conversational_Matrix####################
 
 def Convo():
@@ -157,9 +158,6 @@ def Convo():
 
     
         
-        
-    
-    
 
     
 
