@@ -6,8 +6,11 @@ Gerald.shape("turtle")
 Gerald.color("SteelBlue")
 Gerald.pencolor("SkyBlue")
 Gerald.pensize(10)
-
-
+NamePart1 = ["Void", "Beam", "Sky", "Trilogy", "Oddysey", "Perfection", "Pornography", "Poem", "Song", "Meeting"]
+NamePart2 = ["of", "and", "Lady", "Gentleman", "World"]
+NamePart3 = ["God", "Asgaard", "Holy Light", "Temple", "Feline", "Arson", "Cows", "Aliens"]
+goodVibes = ["y", "Y", "Yes", "Good", "Awesome", "Nice", "!", "Love", "Happy", "Content"]
+badVibes = ["B", "b", "Bad", "Worst", "Terrible", "No", "n", "N", "no", "Anger", "Sad", "Depressed"]
 Action = random.randint(1, 3)
 
 def GetAction():
@@ -40,7 +43,7 @@ def Shape1():
     Gerald.pencolor("Violet")
     Gerald.penup()
     Gerald.forward(ForwardRandom2)
-    for i in range(9):
+    for i in range(50):
         Gerald.pendown()
         for i in range(4):
             Gerald.forward(ForwardRandom1)
@@ -49,8 +52,8 @@ def Shape1():
         Gerald.left(RandomLeft)
 
     Check()
-ForwardRandom1 = random.randint(1, 100)
-ForwardRandom2 = random.randint(1, 100)
+ForwardRandom1 = random.randint(1, 500)
+ForwardRandom2 = random.randint(1, 500)
 RandomTurn = random.randint(1, 90)
 RandomLeft = random.randint(1, 400)
 def Shape2():
@@ -88,6 +91,7 @@ def Shape3():
 
     Check()
 
+
 def DoAction():
     if(Action) == 1:
         Shape1()
@@ -107,7 +111,7 @@ def Check():
     print("So, did you like that shape?")
     print(" Y / N ")
     praise = input(" ")
-    if((praise) == "Y" or (praise) == "y"):
+    if(praise) in goodVibes:
         print("Thanks!")
         if(takeAction) == 4:
             Shape3()
@@ -117,14 +121,51 @@ def Check():
             Shape1()
         if(takeAction) == 1:
             MoveElsewhere()
-    else:
+    if(praise) in badVibes:
         print("Awwwww.....")
         print(" :( ")
         print("")
         GetAction()
+
+    if(praise.lower) == "what is this called?":
+        print(random.choice(NamePart1) + random.choice(NamePart2) + random.choice(NamePart3))
+        Start() 
+
+    if((praise) == "exit" or (praise) == "Exit"):
+        Start()
+
+
+###############Conversational_Matrix####################
+
+def Convo():
+    for i in range(70):
+        print("")
+
+    print("Let's just talk! How are you?")
+    answer = input("")
+    if(answer) in goodVibes:
+        print("That's great! I'm happy for ya! ")
+        
+     
+
+    if(answer) in badVibes:
+        print("I'm sorry! Wanna talk about it?")
         
         
     
+    
+
+    
+        
+        
+    
+    
+
+    
+
+
+
+
     
 
     
